@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Anthony y Marisel</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'Montana';
+        src: url('./assets/fonts/MontanaVictory.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Bacalisties';
+        src: url('./assets/fonts/Bacalisties.ttf') format('truetype'),
+             url('./assets/fonts/Bacalisties.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Didot';
+        src: url('./assets/fonts/Didot.ttf') format('trutype'),
+             url('./assets/fonts/Didot.woff') format('woff');
+    }
+
+    .didot{
+        font-family: 'Didot';
+        font-size: 22px;
+    }
+
+    .montana{
+        font-family: 'Montana';
+        font-size: 30px;
+    }
+    
+    .bacalisties{
+        font-family: 'Bacalisties';
+    }
+
+    .centered{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .vertical-line {
+        border-left: 1.5px solid #5B6041; /* Adjust the width and color as needed */
+        /* height: 150px;  */
+    }
+
+    .custom-button{
+        background-color: #563115; 
+        color: white; 
+        padding: 5px 20px 5px 20px; 
+        border-radius: 30px; 
+        border-color: #563115;
+        margin-top: 4%;
+        font-size: 22px;
+    }
+
+    .first-image{
+        background-image: url('./assets/img/Anthony-02.png');
+        width: 100%; 
+        height: 100vh; 
+        background-size:contain; 
+        /* background-position:top;  */
+        background-repeat: no-repeat; 
+    }
+
+    .thumbnail {
+        position: relative;
+        display: inline-block;
+    }
+
+    .caption {
+        display: flex;
+        flex-direction: column;
+        background-color: lightcoral;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+        text-align: center;
+        color: white;
+    }
+
+    .text{
+        margin: 0;
+    }
+
+</style>
+
+<body style="background-color:#F6F0E5; margin: 0;">
+    
+    <img src="./assets/img/Anthony-02.png" alt="image-1" style="width: 100vw;">
+    
+
+    <div class="centered" style="margin-top: 3%; margin-bottom: 2%;">
+        <div class="vertical-line" style="height: 100px;"></div>
+    </div>
+
+    <div style="display: flex; align-items: center;justify-content: center; flex-direction: column;">
+        <div class="didot">Con mucha felicidad</div>
+        <div class="didot">queremos invitarte a nuestro</div>
+        <div class="montana">Matrimonio</div>
+    </div>
+
+    <div class="centered">
+        <div class="vertical-line" style="height: 150px;"></div>
+    </div>
+
+    <div style="display: flex; align-items: center;justify-content: center; flex-direction: column;">
+        <div class="montana">Mejor son dos que uno solo.</div>
+        <div class="didot">Eclesiastés 4:9a</div>
+    </div>
+
+    <img src="./assets/img/Anthony-05.png" alt="image-1" style="width: 100vw;">
+
+
+    <div class="centered">
+        <div class="vertical-line" style="height: 120px; margin-top: 2%; margin-bottom: 4%;"></div>
+    </div>
+
+    <div class="didot" style=" display: flex; align-items: center;justify-content: center; flex-direction: column; font-size: 22px;">
+        <div>Acompáñanos en nuestra</div>
+        <div>conferencia de boda:</div>
+        <button onclick="openNewTab('conference')" class="custom-button didot">
+            Click para ver el mapa
+        </button>
+    </div>
+
+    <div class="centered">
+        <div class="vertical-line" style="height: 120px; margin-top: 5%;"></div>
+    </div>
+
+    <div style="display: flex; align-items: center;justify-content: center; flex-direction: column;">
+        <div class="montana">Y una cuerda triple no</div>
+        <div class="montana">se rompe facilmente</div>
+        <div class="didot" style="margin-bottom: 2%;">Eclesiastés 4:12b</div>
+        <img src="./assets/img/Anthony-04.png" alt="image-1" style="width: 100vw;">
+    </div>
+
+    <div class="centered" style="margin-top: 4%; margin-bottom: 4%;">
+        <div class="vertical-line" style="height: 120px;"></div>
+    </div>
+
+    <div class="didot" style="display: flex; align-items: center;justify-content: center; flex-direction: column; font-size: 22px;">
+        <div>Acompáñanos en nuestra</div>
+        <div>recepción de boda:</div>
+        <button onclick="openNewTab('reception')" class="custom-button didot">
+            Click para ver el mapa
+        </button>
+    </div>
+
+    <div class="centered" style="margin-bottom: 5%; margin-top: 4%;">
+        <div class="vertical-line" style="height: 120px;"></div>
+    </div>
+
+    <img src="./assets/img/Anthony-03.png" alt="image-1" style="width: 100vw;">
+
+    <div class="centered" style="margin-top:3% ;">
+        <div class="vertical-line"></div>
+    </div>
+
+    <div style="display: flex; align-items: center;justify-content: center; flex-direction: column; margin-top: 3%; padding-bottom: 20px;">
+        <div class="didot" style="font-size: 22px;">Confírmanos tu</div>
+        <div class="bacalisties" style="font-size: 35px;">Asistencia</div>
+        <div class="didot" style="margin-top: 5%;font-size: 22px;"><i>En el siguiente formulario</i></div>
+        <button onclick="openNewTab('form')" class="custom-button didot" style="font-family: 22px;">
+            Click para confirmar
+        </button>
+    </div>
+</body>
+
+
+<script>
+    function openNewTab(tab) {
+        let url = "";
+        switch(tab){
+            case 'conference':
+                url = "https://maps.app.goo.gl/E2iBZUuogPiAexkk6"  
+            break;
+            case 'reception':
+                url = ""    
+            break;
+            case 'form':
+                url = ""   
+            break;
+        }
+        // Open a new window with specified URL
+        window.open(url, "_blank");
+    }
+</script>
+
+</html>
